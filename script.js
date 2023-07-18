@@ -10,4 +10,4 @@ console.log(response)
 document.querySelector("p").innerHTML = `Vous avez ${response.age} ans`
 }
 
-button.addEventListener("click", quelEstTonAge)
+button.addEventListener("click", quelEstTonAge())

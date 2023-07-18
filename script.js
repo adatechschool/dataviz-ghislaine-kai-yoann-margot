@@ -23,5 +23,11 @@ async function guessMyNationality() {
 }
 
 function displayNationality(dataNationality){
-    document.querySelector("#nationality").innerHTML = "Je devine que vous êtes " + dataNationality.country
+    document.querySelector("#nationality").innerHTML = "Je devine que vous êtes " + dataNationality.country[0].country_id
 }
+
+// async function guessMyCountry() {
+//     let response = await fetch(`https://happyapi.fr/api/getLands${nom.value}`);
+//     let dataNationality = await response.json()
+//     displayNationality(dataNationality)
+// }

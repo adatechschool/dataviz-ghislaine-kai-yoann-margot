@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: padding-box;
+}
+header {
+    background-color: blueviolet;
+
+}
+
+header .header {
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    
+
+}
+header .header img {
+    height: 50px;
+    padding: 10px 20px;
+    
+   
+}
+header .header a {
+    color: black;
+    padding: 20px 30px ;
+   
+}
+
+#section-1  {
+    height: 100vh;
+    margin: O auto;
+    padding: 10px 30px;
+
+
+}

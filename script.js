@@ -4,7 +4,6 @@ let nom = document.getElementById('name')
 button.addEventListener('click', () => {
     guessMyAge()
     guessMyNationality()
-    guessMyCountry()
 })
 
 async function guessMyAge() {
@@ -18,26 +17,21 @@ function displayAge(dataAge){
 }
 
 async function guessMyNationality() {
-    let response = await fetch(`https://api.nationalize.io/?name=${nom.value}`);
-    let dataNationality = await response.json()
-    displayNationality(dataNationality)
-    
+    let responseC = await fetch(`https://api.nationalize.io/?name=${nom.value}`);
+    let dataNationality = await responseC.json()
+    let responseP = await fetch(`https://happyapi.fr/api/getLands`);
+    let dataCountry = await responseP.json()
+    displayNationality(dataNationality, dataCountry)
 }
 
-function displayNationality(dataNationality){
-    let codePays = dataNationality.country[0].country_id
-    document.querySelector("#nationality").innerHTML = "Je devine que vous né en " + codePays
+function displayNationality(dataNationality, dataCountry){
+    const codePays = dataNationality.country[0].country_id
+    console.log(codePays)
+    console.log(dataCountry.result.result.codePays)
+    document.querySelector("#nationality").innerHTML = "Je devine que votre code Pays est " + codePays
+    document.querySelector("#country").innerHTML = "Je devine que vous né en " + dataCountry.result.result[codePays]
 }
 
-async function guessMyCountry() {
-    let response = await fetch(`https://happyapi.fr/api/getLands`);
-    let dataCountry = await response.json()
-    displayCountry(dataCountry)
-}
-
-function displayCountry(dataCountry){
-    document.querySelector("#country").innerHTML = "Je devine que vous né en " + dataCountry.result.result.FR
-}
 
 
 

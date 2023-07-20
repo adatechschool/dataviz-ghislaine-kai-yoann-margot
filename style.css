@@ -5,11 +5,10 @@
     text-decoration: none;
     font-family: 'Fira Sans Condensed', sans-serif;
 }
+
 body {
-    
-    /* background: #111  ; */
     background: #000000;
-    /* background: white; */
+    
   }
 /* barre du header ----------- */
 .header {
@@ -34,7 +33,7 @@ body {
     transition: 0.5s;
 }
 #logo:hover {
-    text-shadow: 2px 2Px 10px #03b5ff;
+    text-shadow: 2px 2Px 3px #03b5ff;
 }
 .header ol {
     display: flex;
@@ -97,6 +96,8 @@ body {
 /* fin du responsive de la bar du header */
 
 
+
+
 #age {
     color: white;
 }
@@ -106,24 +107,18 @@ body {
 
 
 #section-1  {
-    height:200vh;
-    /* background-image: url(ressource/boule-crystal.jpg); */
+    height:10vh;
     background-image: url(ressource/1e89fdb62cf7812a3b1e57ead4143e4d.gif);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
     padding-top: 150px;
     text-align: center;
     position: relative;
     min-height: 700px;        
 }
 #section-2 img{
-    /* background-size: cover; */
     background-position: center;  
-    
-    /* background-image: url(ressource/boule-crystal.jpg); */
-    align-items: center;
-    
+    align-items: center;    
 } 
 #section-2 input {
     display: flex;
@@ -155,24 +150,90 @@ body {
     margin: 0 auto;   
 }
 
-
-
-#section-1 .left img {
-    height: 60px;
+.titre h1 {
+    align-items: center;
+    
+    color:#a8e0f1 ;
+    font-weight: 100em;
+    justify-content: center;
+    display: flex;
+    height: 4em;
+    font-size: 45px;
+    
     
 }
-
-
-
-
-
-#section-1 .container-2 h1 {
-    font-size: 1.8em;
-    margin-bottom: 60px;
-    line-height: 1em;
-    color: white;
+.titre h3 {
+    font-weight: 800;
+    color: #fbfffd;
+    letter-spacing: 10px;
     justify-content: center;
+    height: 5em;
+    display: flex;
+    font-size: 25px;
+    
 }
+.titre h1:hover {
+    text-shadow: 5px 2Px 4px white;
+}
+
+
+/* responsive boule de crystal +    API */
+
+
+@media screen  and (max-width:600px){
+    #section-2 img{
+        display:flex ;
+        align-items: center;   
+        background-position: center;
+        justify-content: center;
+        height: 400PX;
+    }
+    .titre h1 {
+        text-align: center;
+    }
+    
+    .titre h3 {
+        text-align: center;
+    }
+    #age {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom:  32vh;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+    #nationality {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom:  30vh;
+        margin: 0 auto; 
+        padding-left: 50px;     
+    }
+    #button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom:  20vh;
+        margin: 0 auto;
+        left: 20px;
+    }
+    #section-2 input {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom:  -25vh;
+        margin: 0 auto; 
+        left: 25px; 
+        width: 100px;
+    }
+}
+
+/* Fin du responsive ----- */
+
+
+
 
 
 

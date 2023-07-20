@@ -16,6 +16,8 @@ body{
     font-size: 45px;
     display: flex; 
     text-decoration: underline;  
+    position: relative;
+    display: flex;
 }
 
 /* réponses */
@@ -25,7 +27,13 @@ body{
     font-size: 30px;
     display: flex; 
     font-weight: 600;
-    margin: 30px 500px;
+    margin: 30px 500;
+    max-width: 1000px;
+    /* justify-content: center; */
+    padding: 0 250px;
+    
+    
+    
 }
 
 /* questions */
@@ -35,5 +43,10 @@ body{
     font-style: italic;
     font-size: 40px;
     display: flex; 
-    margin: 30px 500px;
+    margin: 30px 500;
+    max-width: 1000px;
+    padding: 0 250px;
+    
+    
+    
 }

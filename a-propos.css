@@ -1,3 +1,9 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
 body{
     background: #000000;
     background-image: url(ressource/1e89fdb62cf7812a3b1e57ead4143e4d.gif);
@@ -7,22 +13,45 @@ body{
     text-align: center;
     position: relative;
     min-height: 700px; 
-     
  }
- .titre h1{
-     color: white;
+
+
+.titre h1{
+     color: #64B4CD;
      justify-content: center;
      font-size: 45px;
      display: flex;  
      text-decoration: underline; 
- }
+}
  
- .titre p {
+.titre p {
      color: white;
      justify-content: center;
-     font-size: 30px;
+     font-size: 25px;
      display: flex; 
-     font-weight: 600;
      margin: 30px 70px;
-     
- }
+}
+
+.container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 540px;
+    width: 600px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0,75);
+    border: 1px solid rgba(255, 255, 255, 0,01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 2555, 0.34);
+    flex-basis: 400px;
+    height: 420px;
+    padding: 20px 35px;
+}

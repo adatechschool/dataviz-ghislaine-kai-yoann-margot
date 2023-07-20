@@ -10,6 +10,7 @@ body {
     background: #000000;
     
   }
+
 /* barre du header ----------- */
 .header {
     opacity: 0.95;
@@ -72,6 +73,7 @@ body {
 .header ol li:hover ul li {
     display:block ;
 }
+
 /* fin de la barre du header---------- */
 
 /* responsive for mobile  */
@@ -95,16 +97,12 @@ body {
 }
 /* fin du responsive de la bar du header */
 
-
-
-
 #age {
     color: white;
 }
 #nationality {
     color: white;
 }
-
 
 #section-1  {
     height:10vh;
@@ -125,7 +123,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  -55vh;
+    bottom:  -48vh;
     margin: 0 auto;  
 }
 #age {
@@ -143,11 +141,20 @@ body {
     bottom:  53vh;
     margin: 0 auto;   
 }
+#flag {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom:  52vh;
+    margin: 0 auto; 
+    height: 64px;
+    max-width: 64px;
+}
 #button {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  50vh;
+    bottom:  44vh;
     margin: 0 auto;   
 }
 
@@ -177,7 +184,6 @@ body {
     text-shadow: 5px 2Px 4px white;
 }
 
-
 /* responsive boule de crystal +    API */
 
 
@@ -189,6 +195,7 @@ body {
         justify-content: center;
         height: 400PX;
     }
+
     .titre h1 {
         text-align: center;
     }

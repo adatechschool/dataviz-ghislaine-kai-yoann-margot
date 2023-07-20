@@ -28,9 +28,11 @@ function displayNationality(dataNationality, dataCountry){
     const codePays = dataNationality.country[0].country_id
     console.log(codePays)
     console.log(dataCountry.result.result.codePays)
-    // document.querySelector("#nationality").innerHTML = "Je devine que votre code Pays est " + codePays
-    document.querySelector("#nationality").innerHTML = "Je devine que vous né en " + dataCountry.result.result[codePays]
+    document.querySelector("#nationality").innerHTML = "Je devine que vous né en " + dataCountry.result.result[codePays];
+    const img = document.querySelector("#flag");
+    img.src = `https://flagsapi.com/${codePays}/shiny/64.png`
 }
+
 
 
 

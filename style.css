@@ -120,6 +120,7 @@ body {
     background-position: center;  
     align-items: center;   
     width: 100%; 
+    background-size: cover;
 } 
 #section-2 input {
     display: flex;

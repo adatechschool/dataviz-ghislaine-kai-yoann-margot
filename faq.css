@@ -9,7 +9,8 @@ body{
     min-height: 700px; 
     
 }
-.Titre h1{
+
+.FAQ h1{
     color: white;
     justify-content: center;
     font-size: 45px;
@@ -17,11 +18,22 @@ body{
     text-decoration: underline;  
 }
 
-.Titre p {
-    color: white;
-    justify-content: center;
+/* réponses */
+.FAQ p {
+    color: #FBFFFD;
+    text-align: justify;
     font-size: 30px;
     display: flex; 
     font-weight: 600;
-    margin: 30px 70px;
+    margin: 30px 500px;
+}
+
+/* questions */
+.FAQ h4{
+    color: #64B4CD;
+    text-align: justify;
+    font-style: italic;
+    font-size: 40px;
+    display: flex; 
+    margin: 30px 500px;
 }

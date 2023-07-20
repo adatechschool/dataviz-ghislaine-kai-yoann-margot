@@ -118,7 +118,8 @@ body {
 }
 #section-2 img{
     background-position: center;  
-    align-items: center;    
+    align-items: center;   
+    width: 100%; 
 } 
 #section-2 input {
     display: flex;
@@ -165,12 +166,12 @@ body {
 .titre h3 {
     font-weight: 800;
     color: #fbfffd;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     justify-content: center;
     height: 5em;
     display: flex;
     font-size: 25px;
-    
+    text-align: center;
 }
 .titre h1:hover {
     text-shadow: 5px 2Px 4px white;

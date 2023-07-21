@@ -128,7 +128,7 @@ body {
     background-position: center;  
     align-items: center;   
     width: 100%; 
-    background-size: cover;
+    background-size: auto;
 } 
 #section-2 input {
     display: flex;
@@ -152,6 +152,15 @@ body {
     bottom:  53vh;
     margin: 0 auto;   
 }
+
+#pourcent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom:  51vh;
+    margin: 0 auto;   
+}
+
 #flag {
     display: flex;
     justify-content: center;

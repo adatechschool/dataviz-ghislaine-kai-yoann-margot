@@ -21,6 +21,7 @@ body {
     min-height: 700px; 
 }
 
+
 /* barre du header ----------- */
 .header {
     opacity: 0.95;
@@ -107,13 +108,6 @@ body {
 }
 /* fin du responsive de la bar du header */
 
-#age {
-    color: white;
-}
-#nationality {
-    color: white;
-}
-
 #section-1  {
     height:10vh;
     background-image: url(ressource/1e89fdb62cf7812a3b1e57ead4143e4d.gif);
@@ -143,6 +137,7 @@ body {
     position: relative;
     bottom:  55vh;
     margin: 0 auto; 
+    color: white;
 
 }
 #nationality {
@@ -150,7 +145,8 @@ body {
     justify-content: center;
     position: relative;
     bottom:  53vh;
-    margin: 0 auto;   
+    margin: 0 auto;
+    color: white;   
 }
 #flag {
     display: flex;
@@ -165,7 +161,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  44vh;
+    bottom:  38vh;
     margin: 0 auto;   
 }
 
@@ -215,6 +211,29 @@ h1 {
     height: 300px;
     padding: 20px 35px;
 }
+.container-2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 10px;
+    width: 800px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0,75);
+    border: 1px solid rgba(255, 255, 255, 0,01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(117, 153, 199, 0.51);
+    border: 1px solid rgba(255, 255, 2555, 0.34);
+    flex-basis: 400px;
+    height: 300px;
+    padding: 20px 35px;
+}
+
 
 p {
     position: absolute;
@@ -226,28 +245,50 @@ p {
      margin: 30px 70px;
 }
 
-.question {
+.question-1 {
     position: absolute;
-    top: 15%;
+    top: 30%;
     color:#64B4CD;
     justify-content: center;
     font-size: 25px;
     display: flex; 
-    margin: 30px 70px;
+    margin: 30px 220px;
+    font-style: italic;
+    text-align: justify;
+}
+.question-2 {
+    position: absolute;
+    top: 52%;
+    color:#64B4CD;
+    justify-content: center;
+    font-size: 25px;
+    display: flex; 
+    margin: 30px 220px;
     font-style: italic;
     text-align: justify;
 }
 
-.reponse {
+.reponse-1 {
     position: absolute;
-    top: 15%;
+    top: 40%;
     color: #FBFFFD;
     justify-content: center;
     font-size: 25px;
     display: flex; 
-    margin: 30px 70px;
+    margin: 30px 220px;
     text-align: justify;
 }
+.reponse-2 {
+    position: absolute;
+    top: 62%;
+    color: #FBFFFD;
+    justify-content: center;
+    font-size: 25px;
+    display: flex; 
+    margin: 30px 220px;
+    text-align: justify;
+}
+
 
 /* responsive boule de crystal +    API */
 

@@ -259,54 +259,23 @@ h1 {
     padding: 20px 35px;
 }
 
-
 p {
     font-weight: 600;
     color: #fbfffd;
     font-size: 22px;
     font-style: oblique;
-    /* position: absolute;
-     top: 15%;
-     color: white;
-     justify-content: center;
-     font-size: 25px;
-     display: flex; 
-     margin: 30px 70px; */
 }
 
-.question-1 {
-    position: absolute;
-    top: 30%;
+.question {
     color:#64B4CD;
-    justify-content: center;
     font-size: 25px;
-    display: flex; 
-    margin: 30px 220px;
-    font-style: italic;
-    text-align: justify;
-}
-.question-2 {
-    position: absolute;
-    top: 52%;
-    color:#64B4CD;
-    /* justify-content: center; */
-    font-size: 25px;
-    display: flex; 
-    margin: 30px 70px;
     font-style: italic;
 }
 
 .reponse {
-    position: absolute;
-    top: 15%;
     color: #FBFFFD;
-    justify-content: center;
-    font-size: 25px;
-    display: flex; 
-    margin: 30px 70px;
-    text-align: justify;
+    font-size: 22px;
 }
-
 
 /* responsive boule de crystal +    API */
 

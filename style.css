@@ -124,38 +124,44 @@ body {
     justify-content: center;
     margin: 0 auto;
     padding: 0 auto;
-    position: relative;   
+    position: relative;  
+    
 }
 #section-2 img{
     background-position: center;  
     align-items: center; 
     width: 100%; 
     background-size: auto;
+    margin-top: -5%;
 } 
 #section-2 input {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  -48vh;
+    bottom:  -30vh;
     margin: 0 auto; 
     z-index: 5; 
 }
 
 
- video {
+video {
    
     object-fit: cover;
     position: absolute;
     border-radius:90%;
     width:30%;
-    height:55%;
+    height:52%;
     border:1px solid ; 
     background-size: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-    top: 605px;
-    left: 554px;
+    /* top: 200px; */
+    top: 15%;
+    /* left: 480px; */
+    
+    left: 34%;
+    position: fixed;
     
 
 }
@@ -164,7 +170,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  65vh;
+    bottom:  62vh;
     margin: 0 auto; 
     color: white;
     z-index: 5; 
@@ -193,7 +199,7 @@ body {
    
     justify-content: center;
     position: relative;
-    bottom:  63vh;
+    bottom:  60vh;
     margin: 0 auto;
     color: white;
     z-index: 5;  
@@ -204,7 +210,7 @@ body {
     
     justify-content: center;
     position: relative;
-    bottom:  61vh;
+    bottom:  58vh;
     margin: 0 auto; 
     z-index: 5; 
     animation: animate 5s linear infinite alternate ;  
@@ -214,7 +220,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  62vh;
+    bottom:  50vh;
     margin: 0 auto; 
     height: 64px;
     max-width: 64px;
@@ -227,9 +233,12 @@ body {
     justify-content: center;
     position: absolute;
     text-align: center; 
-    left: 780px;
+    /* left: 495px; */
+    left: 48%;
     z-index: 10;
-    top: 1020px;   
+    /* top: 520px;    */
+    top: 75%; 
+    position: fixed;  
 }
 
 h1 {

@@ -41,7 +41,8 @@ body {
     font-weight: 900;
     letter-spacing: 2px ;
     font-size: 30px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
+    padding-left: 2%;
     line-height: 25px;
     transition: 0.5s;
 }
@@ -141,6 +142,7 @@ body {
     bottom:  -30vh;
     margin: 0 auto; 
     z-index: 5; 
+    
 }
 
 
@@ -253,8 +255,8 @@ button:hover {
     left: 780px;
     z-index: 10;
     /* top: 800px;  */
-    top: 70%;
-    left: 49%;
+    top: 23%;
+    left:64%;
     transform: translate(-50%, -50%);  
 }
 
@@ -263,9 +265,10 @@ button:hover {
     justify-content: center;
     position: absolute;
     text-align: center; 
-    left: 780px;
+    left:60%;
     z-index: 10;
-    top: 900px;   
+    top: 70%; 
+    margin: auto;  
 }
 
 #button-reponse-incorrecte {
@@ -273,11 +276,10 @@ button:hover {
     justify-content: center;
     position: absolute;
     text-align: center; 
-    /* left: 495px; */
-    left: 48%;
+    left: 29%;
     z-index: 10;
-    /* top: 520px;    */
-    top: 75%; 
+    top: 70%; 
+    margin: auto;
      
 }
 
@@ -294,12 +296,15 @@ h1 {
 input {
     color: #03B5FF;
     text-align: center;
+    border-radius: 300px;
+    border: 2px solid #03B5FF;
+    padding: 5px;
+    font-size: medium;
 }
 
 /* modif pour le titre animation  */
  span {
     align-items: center;
-    /* color:#a8e0f1 ; */
     color: white;
     font-weight: 500;
     justify-content: center;

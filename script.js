@@ -5,20 +5,15 @@ let reponseIncorrecte = document.getElementById('button-reponse-incorrecte')
 let indicePays = 0;
 
 button.addEventListener('click', () => {
- // guessMyAge()
     masquerDiv()
     guessMyNationality()
 })
 
 reponseCorrecte.addEventListener('click', () => {
        guessMyAge()
-   //  masquerDiv()
-   //  guessMyNationality()
 })
 
 reponseIncorrecte.addEventListener('click', () => {
-    // guessMyAge()
-    // masquerDiv()
        indicePays += 1
        guessMyNationality()
 }) 
@@ -34,13 +29,15 @@ function masquerDiv()
 }
 
 async function guessMyAge() {
-    let response = await fetch(`https://api.agify.io?name=${nom.value}`);
+    let response = await fetch(`https://api.agify.io?name=${nom.value}&country_id=[codePays]`);
+    console.log(codePays)
+   // let response = await fetch(`https://api.agify.io?name=${nom.value}`);
     let dataAge = await response.json()
     displayAge(dataAge)
 }
 
 function displayAge(dataAge){
-    document.querySelector("#age").innerHTML = "Je devine que vous avez " + dataAge.age + " ans"
+    document.querySelector("#age").innerHTML = "Je devine que tu as " + dataAge.age + " ans"
 }
 
 async function guessMyNationality() {
@@ -52,9 +49,8 @@ async function guessMyNationality() {
 }
 
 function displayNationality(dataNationality, dataCountry){
-    
     const codePays = dataNationality.country[indicePays].country_id
-    document.querySelector("#nationality").innerHTML = "Je devine que vous êtes né : " + dataCountry.result.result[codePays];
+    document.querySelector("#nationality").innerHTML = "Je devine que ton pays est : " + dataCountry.result.result[codePays];
     const img = document.querySelector("#flag");
     img.src = `https://flagsapi.com/${codePays}/shiny/64.png`;
 }

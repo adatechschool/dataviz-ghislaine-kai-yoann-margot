@@ -150,18 +150,20 @@ video {
     position: absolute;
     border-radius:90%;
     width:30%;
-    height:52%;
+    height:40%;
     border:1px solid ; 
     background-size: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
     /* top: 200px; */
-    top: 15%;
+    /* top: 15%; */
     /* left: 480px; */
     
-    left: 34%;
-    
+    /* left: 34%; */
+    top: 47%;
+    left: 49%;
+    transform: translate(-50%, -50%);
     
 
 }

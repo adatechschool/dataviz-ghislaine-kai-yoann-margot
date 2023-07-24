@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 150px;
-    text-align: center;
+    text-align: justify;
     position: relative;
     min-height: 700px; 
 }
@@ -34,6 +34,7 @@ body {
 }
 .header #logo{
     position: relative;
+    /* display: flex; */
     top: 8px;
     color: white;
     text-decoration: none;
@@ -222,6 +223,7 @@ body {
     z-index: 5; 
     animation: animate 5s linear infinite  alternate;
 }
+
 #button {
     
     justify-content: center;
@@ -238,8 +240,8 @@ h1 {
     font-weight: 100em;
     justify-content: center;
     display: flex;
-    height: 4em;
-    font-size: 45px;    
+    height: 2em;
+    font-size: 45px; 
 }
 /* modif pour le titre animation  */
  span {
@@ -249,28 +251,35 @@ h1 {
     font-weight: 500;
     justify-content: center;
     display: flex;
-    height: 4em;
-    
-    font-size: 5.5vw;   
+    height: 2em;
+    font-size: 45px; 
 }
-.multiText {
-    font-weight: 800;
-    color: #a8e0f1 ;
-    text-transform: capitalize;
-}
-/* fin de modif titre animation  */
 
-h3 {
+.accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.accueil h3 {
     font-weight: 800;
     color: #fbfffd;
-    /* letter-spacing: 10px; */
+    letter-spacing: 5px; 
     justify-content: center;
-    height: 5em;
-    display: flex;
-    font-size: 35px;
-    text-align: center;    
+    height: 3em;
+    font-size: 25px;
+    text-align: center;
 }
-.titre h1:hover {
+
+.accueil p {
+    font-weight: 600;
+    color: #fbfffd;
+    font-size: 22px;
+    font-style: oblique;
+}
+.accueil h1:hover {
     text-shadow: 5px 2Px 4px white;
 }
 
@@ -319,61 +328,23 @@ h3 {
     padding: 20px 35px;
 }
 
-
 p {
-    position: absolute;
-     top: 15%;
-     color: white;
-     justify-content: center;
-     font-size: 25px;
-     display: flex; 
-     margin: 30px 70px;
+    font-weight: 600;
+    color: #fbfffd;
+    font-size: 22px;
+    font-style: oblique;
 }
 
-.question-1 {
-    position: absolute;
-    top: 30%;
+.question {
     color:#64B4CD;
-    justify-content: center;
     font-size: 25px;
-    display: flex; 
-    margin: 30px 220px;
     font-style: italic;
-    text-align: justify;
-}
-.question-2 {
-    position: absolute;
-    top: 52%;
-    color:#64B4CD;
-    justify-content: center;
-    font-size: 25px;
-    display: flex; 
-    margin: 30px 220px;
-    font-style: italic;
-    text-align: justify;
 }
 
-.reponse-1 {
-    position: absolute;
-    top: 38%;
+.reponse {
     color: #FBFFFD;
-    justify-content: center;
-    font-size: 25px;
-    display: flex; 
-    margin: 30px 220px;
-    text-align: justify;
+    font-size: 22px;
 }
-.reponse-2 {
-    position: absolute;
-    top: 62%;
-    color: #FBFFFD;
-    justify-content: center;
-    font-size: 25px;
-    display: flex; 
-    margin: 30px 220px;
-    text-align: justify;
-}
-
 
 /* responsive boule de crystal +    API */
 
@@ -386,11 +357,11 @@ p {
         height: 400PX;
     }
 
-    .titre h1 {
+    .accueil h1 {
         text-align: center;
     }
     
-    .titre h3 {
+    .accueil h3 {
         text-align: center;
     }
     #age {

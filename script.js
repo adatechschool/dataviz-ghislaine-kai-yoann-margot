@@ -3,6 +3,7 @@ let nom = document.getElementById('name')
 let reponseCorrecte = document.getElementById('button-reponse-correcte')
 let reponseIncorrecte = document.getElementById('button-reponse-incorrecte')
 let indicePays = 0;
+let countryId = '';
 
 button.addEventListener('click', () => {
     masquerDiv()
@@ -29,8 +30,8 @@ function masquerDiv()
 }
 
 async function guessMyAge() {
-    let response = await fetch(`https://api.agify.io?name=${nom.value}&country_id=[codePays]`);
-    console.log(codePays)
+    let response = await fetch(`https://api.agify.io?name=${nom.value}&country_id=${countryId}`);
+    console.log(countryId)
    // let response = await fetch(`https://api.agify.io?name=${nom.value}`);
     let dataAge = await response.json()
     displayAge(dataAge)
@@ -49,7 +50,9 @@ async function guessMyNationality() {
 }
 
 function displayNationality(dataNationality, dataCountry){
-    const codePays = dataNationality.country[indicePays].country_id
+    const codePays = dataNationality.country[indicePays].country_id;
+    countryId = codePays;
+    console.log(countryId)
     document.querySelector("#nationality").innerHTML = "Je devine que ton pays est : " + dataCountry.result.result[codePays];
     const img = document.querySelector("#flag");
     img.src = `https://flagsapi.com/${codePays}/shiny/64.png`;

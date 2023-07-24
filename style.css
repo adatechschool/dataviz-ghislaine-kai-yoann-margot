@@ -252,7 +252,10 @@ button:hover {
     text-align: center; 
     left: 780px;
     z-index: 10;
-    top: 800px;   
+    /* top: 800px;  */
+    top: 70%;
+    left: 49%;
+    transform: translate(-50%, -50%);  
 }
 
 #button-reponse-correcte {

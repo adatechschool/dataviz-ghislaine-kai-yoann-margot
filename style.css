@@ -132,7 +132,7 @@ body {
     align-items: center; 
     width: 100%; 
     background-size: auto;
-    margin-top: -5%;
+    margin-top: 2%;
 } 
 #section-2 input {
     display: flex;
@@ -161,7 +161,7 @@ video {
     /* left: 480px; */
     
     left: 34%;
-    position: fixed;
+    
     
 
 }
@@ -258,7 +258,7 @@ video {
     z-index: 10;
     /* top: 520px;    */
     top: 75%; 
-    position: fixed;  
+     
 }
 
 h1 {

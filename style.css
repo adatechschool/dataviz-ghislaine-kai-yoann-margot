@@ -15,7 +15,7 @@ body {
     background-image: url(ressource/1e89fdb62cf7812a3b1e57ead4143e4d.gif);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: justify;
     position: relative;
     min-height: 700px; 
@@ -156,8 +156,8 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    top: 1528px;
-    left: 454px;
+    top: 1228px;
+    left: 354px;
     
 
 }
@@ -246,8 +246,8 @@ h1 {
 /* modif pour le titre animation  */
  span {
     align-items: center;
-    /* color:#a8e0f1 ; */
-    color: white;
+    color:#a8e0f1 ;
+    
     font-weight: 500;
     justify-content: center;
     display: flex;

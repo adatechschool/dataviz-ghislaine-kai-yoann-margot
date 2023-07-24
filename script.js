@@ -7,6 +7,7 @@ let countryId = '';
 
 button.addEventListener('click', () => {
     masquerDiv()
+    debutVideo()
     guessMyNationality()
 })
 
@@ -15,7 +16,8 @@ reponseCorrecte.addEventListener('click', () => {
 })
 
 reponseIncorrecte.addEventListener('click', () => {
-       indicePays += 1
+       indicePays += 1;
+       debutVideo();
        guessMyNationality()
 }) 
 
@@ -26,6 +28,15 @@ function masquerDiv()
   }
   else {
        document.getElementById('reponse-utilisateur').style.display = 'none';
+  }
+}
+function debutVideo()
+{
+  if (document.getElementById('animation').style.display == 'none') {
+       document.getElementById('animation').style.display = 'block';
+  }
+  else {
+       document.getElementById('animation').style.display = 'none';
   }
 }
 

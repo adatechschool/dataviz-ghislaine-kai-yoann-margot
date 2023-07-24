@@ -1,10 +1,24 @@
 let button = document.getElementById('button')
 let nom = document.getElementById('name')
 
+
+
 button.addEventListener('click', () => {
-    guessMyAge()
+  //  guessMyAge()
+    masquerDiv()
     guessMyNationality()
 })
+
+function masquerDiv()
+{
+  if (document.getElementById('reponse-utilisateur').style.display == 'none') {
+       document.getElementById('reponse-utilisateur').style.display = 'block';
+  }
+  else {
+       document.getElementById('reponse-utilisateur').style.display = 'none';
+  }
+}
+
 
 async function guessMyAge() {
     let response = await fetch(`https://api.agify.io?name=${nom.value}`);
@@ -27,14 +41,14 @@ async function guessMyNationality() {
 function displayNationality(dataNationality, dataCountry){
     const codePays = dataNationality.country[0].country_id
     document.querySelector("#nationality").innerHTML = "Je devine que vous êtes né : " + dataCountry.result.result[codePays];
-    let totalPourcent = 0;
-    totalPourcent = dataNationality.country[0].probability / (dataNationality.country[0].probability + dataNationality.country[1].probability + dataNationality.country[2].probability + dataNationality.country[3].probability + dataNationality.country[4].probability) * 100
+    //let totalPourcent = 0;
+    //totalPourcent = dataNationality.country[0].probability / (dataNationality.country[0].probability + dataNationality.country[1].probability + dataNationality.country[2].probability + dataNationality.country[3].probability + dataNationality.country[4].probability) * 100
     // for (let i=0;dataNationality.country.length-1;i++) {
     //     return totalPourcent += dataNationality.country[i].probability;
     // }
     const img = document.querySelector("#flag");
     img.src = `https://flagsapi.com/${codePays}/shiny/64.png`;
-    document.querySelector("#pourcent").innerHTML = "J'en suis sure à " + totalPourcent + " %";
+    //document.querySelector("#pourcent").innerHTML = "J'en suis sure à " + totalPourcent + " %";
     // document.querySelector("#pourcent").innerHTML = "J'en suis sure à " + totalPourcent;
 }
 

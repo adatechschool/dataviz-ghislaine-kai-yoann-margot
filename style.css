@@ -229,6 +229,26 @@ body {
     text-align: center; 
     left: 780px;
     z-index: 10;
+    top: 800px;   
+}
+
+#button-reponse-correcte {
+
+    justify-content: center;
+    position: absolute;
+    text-align: center; 
+    left: 780px;
+    z-index: 10;
+    top: 900px;   
+}
+
+#button-reponse-incorrecte {
+    
+    justify-content: center;
+    position: absolute;
+    text-align: center; 
+    left: 780px;
+    z-index: 10;
     top: 1020px;   
 }
 

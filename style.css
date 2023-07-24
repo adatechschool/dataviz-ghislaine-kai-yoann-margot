@@ -57,8 +57,7 @@ body {
     list-style: none;
     text-transform: uppercase;
     display: block;
-
-}
+    }
 .header ol li a {
     color: white;
     text-decoration: none;
@@ -401,8 +400,16 @@ font-weight: 600;
 color: #fbfffd;
 font-size: 22px;
 font-style: oblique;
-list-style-type: circle;
 }
+
+.a-propos ul li {
+    font-weight: 600;
+    color: #fbfffd;
+    font-size: 22px;
+    font-style: oblique;
+    list-style: square;
+    list-style-position: outside;
+    }
 
 p {
     font-weight: 600;
@@ -412,13 +419,13 @@ p {
 }
 
 .question {
-    color:#000000;
+    color: #FBFFFD;
     font-size: 25px;
     font-style: italic;
 }
 
 .reponse {
-    color: #FBFFFD;
+    color: #A8E0F1;
     font-size: 22px;
 }
 

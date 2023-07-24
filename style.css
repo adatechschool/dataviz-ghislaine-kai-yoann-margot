@@ -285,6 +285,12 @@ h1 {
     height: 2em;
     font-size: 45px; 
 }
+
+input {
+    color: #03B5FF;
+    text-align: center;
+}
+
 /* modif pour le titre animation  */
  span {
     align-items: center;

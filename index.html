@@ -12,51 +12,76 @@
 </head>
 <body>
     <div class="header">
+        <img src="images/magic-ball-1876437.png" alt="logo boule de cristal" height="55px">
         <a href="#" id="logo">Madame KYMG</a>
             <ol>
-                <li><a href="#"><i class="glyphicon glyphicon-home"></i>Home</a></li>   
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i>Contact</a>
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Home</a></li>   
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Contact</a>
                    <ul>
                      <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
                      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                      <li><a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a></li>
                    </ul>
                 </li>   
-                <li><a href="#"><i class="glyphicon glyphicon-globe"></i>Services</a>
+                <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Prédictions</a>
                     <ul>
-                        <li><a href="#">Age</a></li>
-                        <li><a href="#">Country</a></li>
-                        <li><a href="#">Development</a></li>
+                        <li><a href="prediction.html">Âge</a></li>
+                        <li><a href="#">Nationalité</a></li>
+                        <!-- <li><a href="#">Development</a></li> -->
                       </ul>
                 </li>   
-                <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>About</a>
+                <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i> A propos</a>
                     <ul>
-                        <li><a href="http://127.0.0.1:5500/a-propos.html" target="_blank">A propos</a></li>
+                        <li><a href="http://127.0.0.1:5500/a-propos.html" target="_blank">L'équipe</a></li>
                         <li><a href="http://127.0.0.1:5500/faq.html" target="_blank">FAQ</a></li>
                         <li><a href="http://127.0.0.1:5500/rgpd.html" target="_blank">RGPD</a></li>
                      </ul>
                 </li>   
             </ol>
         </div>
+        <div class="titre-2">
+            <span>Les Prédictions, <span class="multiText"></span></span>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            let typingEffect = new Typed(".multiText",{
+                strings : ["...","de Madame ...","...","de Madame KYMG"],
+                loop : true,
+                typeSpeed :200,
+                backSpeed : 100,
+                startDelay : 1000,
+                backDelay : 1500,
+            })
+        </script>
         <div class="titre">
-            <h1>Les Prédictions de Madame KYMG</h1>
-            <h3>Donne-moi ton prénom <br>je te dirai qui tu es</h3>
+            <!-- <h1>Les Prédictions de Madame KYMG</h1> -->
+            <!-- <h3>Donne-moi ton prénom <br>je te dirai qui tu es</h3> -->
             
         </div>
 
     <section id="section-1">
-        <div class="container-2">
+        <div class="container-3">
             
         </div>
     </section>
+
     <section id="section-2">
-        
+        <div class="titre">
+            <h3>Donne-moi ton prénom <br>je te dirai qui tu es</h3>
+        </div>
         <input type="text" id="name" placeholder="Rentrez votre prénom">
         <img src="ressource/boule-crystal.jpg" alt="" height="900px">
+        
         <p id="age"></p>
         <p id="nationality"> </p>
+        <p id="pourcent"> </p>
         <img id = "flag"/>
         <button id="button">Valider</button>
+        
+            
+        <video src="ressource/blue_smoke_or_particle_polygon_shape.mp4" autoplay  loop muted></video>
+       
+        <!-- <video src="ressource/blue_smoke_forming.mp4" autoplay  loop muted></video> -->
     </section>
    
     
@@ -65,10 +90,10 @@
 </section>
 <!-- <footer>
     <div>
-        <a href="#">About us</a>
-        <a href="#">FAQ</a>
-        <a href="https://fr-fr.facebook.com/">Facebook</a>
-        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="http://127.0.0.1:5500/a-propos.html" target="_blank">About us</a>
+        <a href="http://127.0.0.1:5500/faq.html" target="_blank">FAQ</a>
+        <a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
     </div>
 </footer> -->
     <script src="script.js"></script>

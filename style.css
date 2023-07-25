@@ -281,6 +281,17 @@ button:hover {
     margin: auto;
      
 }
+#button-reset {
+    
+    justify-content: center;
+    position: absolute;
+    text-align: center; 
+    left: 42%;
+    z-index: 10;
+    top: 78%; 
+    margin: auto;
+     
+}
 
 h1 {
     align-items: center;

@@ -400,6 +400,25 @@ input {
     height: auto;
     padding: 20px 35px;
 }
+.container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 800px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(117, 153, 199, 0.51);
+    border: 1px solid rgba(255, 255, 2555, 0.34);
+    flex-basis: 400px;
+    height: auto;
+    padding: 20px 35px;
+}
 
 .a-propos {
 font-weight: 600;

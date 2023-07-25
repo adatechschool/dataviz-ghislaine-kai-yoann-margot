@@ -533,20 +533,40 @@ p {
 /* Fin du style de la page RGPD.html */
 
 
-/* etoiles */
+/* notation sur 5 etoiles */
+#notation {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative; 
+    bottom:  22vh;
+    border-width: 4px;
+    border-style: double;
+    border-color: #A8E0F1;
+ }
 
-.rating a {
-    float: right;
-    color: #A8E0F1;
+ #notation p { 
+    font-size: 18px; 
+ }
+
+.rating {
+    direction: rtl;
+    font-size: 12px; 
+ }
+
+ .rating a {
+    color: #024E67;
     text-decoration: none;
     font-size: 3em;
     transition: color .4s;
  }
+
  .rating a:hover,
  .rating a:focus,
  .rating a:hover ~ a,
  .rating a:focus ~ a {
-    color: #64B4CD;
+    color: #A8E0F1;
     cursor: pointer;
  }
 

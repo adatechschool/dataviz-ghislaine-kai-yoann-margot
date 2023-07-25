@@ -419,7 +419,8 @@ font-style: oblique;
     font-size: 22px;
     font-style: oblique;
     list-style: square;
-    list-style-position: outside;
+    list-style-position: inside;
+    padding-left: 50px;
     }
 
 p {

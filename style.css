@@ -530,10 +530,25 @@ p {
     font-size: 22px;
 }
 
-/* Fin du style de la page RGPD.html
+/* Fin du style de la page RGPD.html */
 
 
+/* etoiles */
 
+.rating a {
+    float: right;
+    color: #A8E0F1;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: #64B4CD;
+    cursor: pointer;
+ }
 
 
 

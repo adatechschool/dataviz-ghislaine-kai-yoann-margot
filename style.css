@@ -80,7 +80,6 @@ body {
 }
 .header ol li ul li {
     display: none;
-
 }
 .header ol li:hover ul li {
     display:block ;
@@ -119,14 +118,15 @@ body {
     position: relative;
     min-height: 400px;        
 }
+
 #section-2 {
     text-align: center;
     justify-content: center;
     margin: 0 auto;
     padding: 0 auto;
     position: relative;  
-    
 }
+
 #section-2 img{
     background-position: center;  
     align-items: center; 
@@ -134,6 +134,7 @@ body {
     background-size: auto;
     margin-top: 2%;
 } 
+
 #section-2 input {
     display: flex;
     justify-content: center;
@@ -141,12 +142,9 @@ body {
     bottom:  -30vh;
     margin: 0 auto; 
     z-index: 5; 
-    
 }
 
-
 video {
-   
     object-fit: cover;
     position: absolute;
     border-radius:90%;
@@ -160,24 +158,21 @@ video {
     /* top: 200px; */
     /* top: 15%; */
     /* left: 480px; */
-    
     /* left: 34%; */
     top: 47%;
     left: 49%;
     transform: translate(-50%, -50%);
-    
-
 }
 
 #age {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  62vh;
+    bottom:  70vh;
     margin: 0 auto; 
     color: white;
     z-index: 5; 
-    animation: animate 5s linear  infinite alternate ;
+    /* animation: animate 5s linear ; */
 }
 .animation :hover {
     animation-delay: 40s;
@@ -196,39 +191,33 @@ video {
         transform: rotateY(0deg);
         filter: blur(0);
     }
-
 }
+
 #nationality {
-   
     justify-content: center;
     position: relative;
-    bottom:  60vh;
+    bottom:  62vh;
+    width: 250px;
     margin: 0 auto;
     color: white;
     z-index: 5;  
-    animation: animate 5s linear  infinite alternate;  
+    /* animation: animate 5s linear alternate;   */
 }
 
-#pourcent {
-    
-    justify-content: center;
-    position: relative;
-    bottom:  58vh;
-    margin: 0 auto; 
-    z-index: 5; 
-    animation: animate 5s linear infinite alternate ;  
+.animation-text {
+    animation: animate 10s linear alternate;
 }
+
 #flag {
-    
     display: flex;
     justify-content: center;
     position: relative;
-    bottom:  50vh;
+    bottom:  60vh;
     margin: 0 auto; 
     height: 64px;
     max-width: 64px;
     z-index: 5; 
-    animation: animate 5s linear infinite  alternate;
+    /* animation: animate 5s linear alternate; */
 }
 
 button {
@@ -247,7 +236,6 @@ button:hover {
 }
 
 #button {
-    
     justify-content: center;
     position: absolute;
     text-align: center; 
@@ -260,7 +248,6 @@ button:hover {
 }
 
 #button-reponse-correcte {
-
     justify-content: center;
     position: absolute;
     text-align: center; 
@@ -271,7 +258,6 @@ button:hover {
 }
 
 #button-reponse-incorrecte {
-    
     justify-content: center;
     position: absolute;
     text-align: center; 
@@ -279,10 +265,9 @@ button:hover {
     z-index: 10;
     top: 70%; 
     margin: auto;
-     
 }
+
 #button-reset {
-    
     justify-content: center;
     position: absolute;
     text-align: center; 
@@ -290,7 +275,6 @@ button:hover {
     z-index: 10;
     top: 78%; 
     margin: auto;
-     
 }
 
 h1 {
@@ -473,6 +457,7 @@ p {
     .accueil h3 {
         text-align: center;
     }
+
     #age {
         display: flex;
         justify-content: center;
@@ -481,7 +466,6 @@ p {
         margin: 0 auto;
         padding-left: 50px;
         font-size: small;
-        
     }
     
     #nationality {
@@ -503,17 +487,8 @@ p {
         left: -5px; 
         width: 80px;
     }
-    #pourcent {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        bottom:  30vh;
-        margin: 0 auto; 
-        font-size: small; 
-        
-    }
+
     #flag {
-    
         display: flex;
         justify-content: center;
         position: relative;
@@ -521,8 +496,8 @@ p {
         margin: 0 auto; 
         max-height: 50px;  
     }
+
     #button {
-    
         justify-content: center;
         position: absolute;
         text-align: center; 
@@ -530,8 +505,8 @@ p {
         height: 20px;
         top: 1635px;    
     }
+
     video {
-   
         object-fit: cover;
         position: absolute;
         border-radius:90%;

@@ -206,18 +206,9 @@ video {
     margin: 0 auto;
     color: white;
     z-index: 5;  
-    animation: animate 5s linear  infinite alternate;  
+    animation: animate 5s linear alternate;  
 }
 
-#pourcent {
-    
-    justify-content: center;
-    position: relative;
-    bottom:  58vh;
-    margin: 0 auto; 
-    z-index: 5; 
-    animation: animate 5s linear infinite alternate ;  
-}
 #flag {
     
     display: flex;
@@ -228,7 +219,7 @@ video {
     height: 64px;
     max-width: 64px;
     z-index: 5; 
-    animation: animate 5s linear infinite  alternate;
+    animation: animate 5s linear  alternate;
 }
 
 button {

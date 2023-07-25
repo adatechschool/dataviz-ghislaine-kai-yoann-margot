@@ -201,11 +201,6 @@ video {
     margin: 0 auto;
     color: white;
     z-index: 5;  
-<<<<<<< HEAD
-    animation: animate 5s linear alternate;  
-}
-
-=======
     /* animation: animate 5s linear alternate;   */
 }
 
@@ -213,7 +208,6 @@ video {
     animation: animate 10s linear alternate;
 }
 
->>>>>>> d53ac953ad82d897d51138fbde94942cd3f9d94e
 #flag {
     display: flex;
     justify-content: center;
@@ -223,11 +217,7 @@ video {
     height: 64px;
     max-width: 64px;
     z-index: 5; 
-<<<<<<< HEAD
-    animation: animate 5s linear  alternate;
-=======
     /* animation: animate 5s linear alternate; */
->>>>>>> d53ac953ad82d897d51138fbde94942cd3f9d94e
 }
 
 button {

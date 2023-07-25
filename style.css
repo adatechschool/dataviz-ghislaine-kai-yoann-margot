@@ -15,7 +15,7 @@ body {
     background-image: url(ressource/1e89fdb62cf7812a3b1e57ead4143e4d.gif);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 50px;
+    padding-top: 12px;
     text-align: justify;
     /* position: relative; */
     min-height: 700px; 
@@ -361,17 +361,15 @@ input {
     text-shadow: 5px 2Px 4px white;
 }
 
-.container {
+.container-4 {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -70%);
-    padding: 10px;
     width: 800px;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0,75);
-    border: 1px solid rgba(255, 255, 255, 0,01);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
     color: #232323;
@@ -380,20 +378,17 @@ input {
     background: rgba(117, 153, 199, 0.51);
     border: 1px solid rgba(255, 255, 2555, 0.34);
     flex-basis: 400px;
-    height: 300px;
+    height: 70%;
     padding: 20px 35px;
 }
 .container-2 {
     position: absolute;
-    top: 55%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -70%);
-    padding: 10px;
     width: 800px;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0,75);
-    border: 1px solid rgba(255, 255, 255, 0,01);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
     color: #232323;

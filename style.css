@@ -127,6 +127,10 @@ body {
     position: relative;  
 }
 
+#section-2 p {
+    text-align: center; 
+}
+
 #section-2 img{
     background-position: center;  
     align-items: center; 
@@ -227,6 +231,7 @@ button {
     border: 2px solid #03B5FF;
     border-radius: 300px;
     padding: 10px;
+    font-weight: bold; 
 }
 
 button:hover {
@@ -244,7 +249,7 @@ button:hover {
     /* top: 800px;  */
     top: 23%;
     left:64%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
 }
 
 #button-reponse-correcte {
@@ -340,6 +345,7 @@ input {
     color: #fbfffd;
     font-size: 22px;
     font-style: oblique;
+    text-align: center;
 }
 .accueil h1:hover {
     text-shadow: 5px 2Px 4px white;
@@ -364,79 +370,56 @@ input {
     flex-basis: 400px;
     height: 70%;
     padding: 20px 35px;
-}
-.container-2 {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    width: 800px;
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
-    color: #232323;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    background: rgba(117, 153, 199, 0.51);
-    border: 1px solid rgba(255, 255, 2555, 0.34);
-    flex-basis: 400px;
-    height: auto;
-    padding: 20px 35px;
-}
-.container {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    width: 800px;
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0,1);
-    color: #232323;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    background: rgba(117, 153, 199, 0.51);
-    border: 1px solid rgba(255, 255, 2555, 0.34);
-    flex-basis: 400px;
-    height: auto;
-    padding: 20px 35px;
+    text-align: justify;
 }
 
 .a-propos {
-font-weight: 600;
+font-weight: 400;
 color: #fbfffd;
 font-size: 22px;
 font-style: oblique;
+text-align: justify;
+}
+
+.a-propos ul {
+    text-align: justify;
 }
 
 .a-propos ul li {
-    font-weight: 600;
+    font-weight: 400;
     color: #fbfffd;
     font-size: 22px;
     font-style: oblique;
     list-style: square;
     list-style-position: inside;
     padding-left: 50px;
+    text-align: justify;
+    }
+
+.a-propos ul li a {
+    text-decoration: underline;
+    text-align: justify;
     }
 
 p {
-    font-weight: 600;
+    font-weight: 400;
     color: #fbfffd;
     font-size: 22px;
     font-style: oblique;
+    text-align: justify;
 }
 
 .question {
     color: #FBFFFD;
     font-size: 25px;
     font-style: italic;
+    font-weight: 400;
 }
 
 .reponse {
     color: #A8E0F1;
     font-size: 22px;
+    font-weight: 400;
 }
 
 /* responsive boule de crystal +    API */
@@ -544,15 +527,18 @@ p {
     border-width: 4px;
     border-style: double;
     border-color: #A8E0F1;
+    width: 50%;
  }
 
  #notation p { 
-    font-size: 18px; 
+    font-size: 18px;
+    text-align: center;
  }
 
 .rating {
     direction: rtl;
-    font-size: 12px; 
+    font-size: 12px;
+    text-align: center;
  }
 
  .rating a {
